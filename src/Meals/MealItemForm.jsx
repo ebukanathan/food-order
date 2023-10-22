@@ -2,11 +2,11 @@ import React from 'react'
 import classes from './MealItemForm.module.css'
 import Input from '../UI/Input'
 
-function MealItemForm() {
+function MealItemForm(prop) {
   return (
     <div className={classes.form}>
         <Input label="Amount" input={{
-            id:'amount',
+            id:'amount_'+ prop.id,
             type:'number',
             min:'1',
             max:'5',
